@@ -78,8 +78,23 @@ configuration_options =
 		options =
 		
 		{
+			{description = "Instant", data = 0},
 			{description = "1 Sec", data = 1},
 			{description = "5 Sec", data = 5},
+		},
+		default = 1,
+	},
+
+
+	{
+		name    = "dist",
+		label   = "Login Music",
+		hover   = "Want Login Screen music to have special FX ?",
+		options =
+		
+		{
+			{description = "Yes", data = 1},
+			{description = "No", data = 5},
 		},
 		default = 1,
 	},

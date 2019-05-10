@@ -36,11 +36,12 @@ AddClassPostConstruct("screens/redux/mainscreen", function(self, Sim)
 		
 
 
-
-		self.inst:DoTaskInTime(.1, function()
-			TheSim:SetReverbPreset("low")
-	        GLOBAL.TheFrontEnd:GetSound():SetVolume("FEMusic", 0.1)
-	    end)
+		if GetModConfigData("dist") == 1 then
+			self.inst:DoTaskInTime(.1, function()
+				TheSim:SetReverbPreset("low")
+		        GLOBAL.TheFrontEnd:GetSound():SetVolume("FEMusic", 0.1)
+		    end)
+		end
 
    		self.oldInit(self)
    	end
