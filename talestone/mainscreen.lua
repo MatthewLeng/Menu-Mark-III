@@ -1,5 +1,5 @@
 
-
+GLOBAL.DISABLE_MOD_WARNING = true 
 AddClassPostConstruct("screens/redux/mainscreen", function(self, Sim)
 	self.bg:Kill()
 	self.title:Kill()
